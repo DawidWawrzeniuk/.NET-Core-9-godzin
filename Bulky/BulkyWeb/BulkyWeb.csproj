@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>     <!--to oznacza czy chcemy aby samo dodawało biblioteki podczas pisania kodu czy zeby
+	manualnie trzeba bylo je dodawać-->
+  </PropertyGroup>
+                        <!--tu dodajemy nuget paczki lub npm paczki-->
+</Project>
+
+
+
+<!--w dependencies w exploratorze mogą znajdować sie pliki ktore dodaja baze danych lub integracje płatności
+    dependencies oznaczaja ze projekt jest zalezny od innego projektu lub od innych paczek
+
+-->
