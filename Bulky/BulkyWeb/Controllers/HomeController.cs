@@ -13,7 +13,7 @@ namespace BulkyWeb.Controllers
 			_logger = logger;
 		}
 
-		public IActionResult Index()
+		public IActionResult Index()				/*IActionResult zawiera wszystkie typy odpowiedzi ktore mo¿e zwrocic akcja w kontrolerze*/
 		{
 			return View();
 		}
