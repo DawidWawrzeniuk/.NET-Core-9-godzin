@@ -1,6 +1,20 @@
 ﻿@model List<Category>								//przechwycenie danych z kontrolera
 
-<h1>Category List</h1>
+
+
+<div class="container">
+	<div class="row pt-4 pb-3">			@* pt oznacza padding top a pb oznacza padding bottom. Tutaj jest tworzony div ktory dzieli storne na 12 kolumn  *@
+		<div class="col-6">					@*pierwsze 6 kolumn zajmuje tekst*@
+			<h2 class="text-primary">
+				Category List
+			</h2>
+		</div>
+		<div class="col-6 text-end">		@*drugie 6 kolumn zajmuje przycisk*@
+			<a asp-controller="Category" asp-action="Create" class="btn btn-primary">		@* Można napisac same action bo i tak bedzie szukac w tym kotrolerze w ktorym jest index *@
+				<i class="bi bi-plus-circle"></i> Create New Category
+			</a>
+		</div>
+	</div>
 <table class="table table-bordered table-striped">
 	<thead>
 		<!--głowa tabeli-->
@@ -26,3 +40,4 @@
 		}
 	</tbody>
 </table>
+</div>

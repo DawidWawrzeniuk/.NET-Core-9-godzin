@@ -1,11 +1,13 @@
 ﻿using BulkyWeb.Models;
 using Microsoft.EntityFrameworkCore;
+using static System.Net.WebRequestMethods;
+using System.Data.SqlTypes;
 
 namespace BulkyWeb.Data
 {
     public class ApplicationDbContext : DbContext   //załadowanie klasy DbContext ktora pozwala na dostęp do Entity Framework
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) //w konstruktorze przekazujemy opcje do DbContext
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) //DbContextOptions to klasa, która zawiera wszystkie opcje konfiguracyjne dla DbContext. Może obejmować informacje o:Typie bazy danych(np.SQL Server, SQLite, PostgreSQL)Ciągu połączenia z bazą danychInnych opcjach dotyczących zachowania kontekstu(np.śledzenie zmian, dostępność lazynjnego ładowania danych itp.).
         {
 
         }
