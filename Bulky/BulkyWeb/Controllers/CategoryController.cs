@@ -42,6 +42,7 @@ namespace BulkyWeb.Controllers
 			}
 			return View();
 		}
+<<<<<<< HEAD
 
 
 
@@ -89,5 +90,7 @@ namespace BulkyWeb.Controllers
 			}
 			return View();
 		}
+=======
+>>>>>>> 852cbefe7256577b8881ae109015e4c1593d4a69
 	}
 }

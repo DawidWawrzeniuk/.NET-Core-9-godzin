@@ -142,6 +142,7 @@ C:\Users\PC\Desktop\.NET Kurs 9 godzin\Bulky\BulkyWeb\obj\Debug\net8.0\refint\Bu
 C:\Users\PC\Desktop\.NET Kurs 9 godzin\Bulky\BulkyWeb\obj\Debug\net8.0\BulkyWeb.pdb
 C:\Users\PC\Desktop\.NET Kurs 9 godzin\Bulky\BulkyWeb\obj\Debug\net8.0\BulkyWeb.genruntimeconfig.cache
 C:\Users\PC\Desktop\.NET Kurs 9 godzin\Bulky\BulkyWeb\obj\Debug\net8.0\ref\BulkyWeb.dll
+<<<<<<< HEAD
 C:\Users\dawi2\Desktop\.NET Core 9 godzin\Bulky\BulkyWeb\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\dawi2\Desktop\.NET Core 9 godzin\Bulky\BulkyWeb\bin\Debug\net8.0\appsettings.json
 C:\Users\dawi2\Desktop\.NET Core 9 godzin\Bulky\BulkyWeb\bin\Debug\net8.0\appsettings.Production.json
@@ -285,3 +286,5 @@ C:\Users\dawi2\Desktop\.NET Core 9 godzin\Bulky\BulkyWeb\obj\Debug\net8.0\refint
 C:\Users\dawi2\Desktop\.NET Core 9 godzin\Bulky\BulkyWeb\obj\Debug\net8.0\BulkyWeb.pdb
 C:\Users\dawi2\Desktop\.NET Core 9 godzin\Bulky\BulkyWeb\obj\Debug\net8.0\BulkyWeb.genruntimeconfig.cache
 C:\Users\dawi2\Desktop\.NET Core 9 godzin\Bulky\BulkyWeb\obj\Debug\net8.0\ref\BulkyWeb.dll
+=======
+>>>>>>> 852cbefe7256577b8881ae109015e4c1593d4a69

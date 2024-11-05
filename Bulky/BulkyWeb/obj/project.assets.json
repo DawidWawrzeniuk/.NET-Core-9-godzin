@@ -4040,11 +4040,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\dawi2\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
+>>>>>>> 852cbefe7256577b8881ae109015e4c1593d4a69
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\dawi2\\Desktop\\.NET Core 9 godzin\\Bulky\\BulkyWeb\\BulkyWeb.csproj",
       "projectName": "BulkyWeb",
       "projectPath": "C:\\Users\\dawi2\\Desktop\\.NET Core 9 godzin\\Bulky\\BulkyWeb\\BulkyWeb.csproj",
@@ -4053,6 +4058,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dawi2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\BulkyWeb\\BulkyWeb.csproj",
+      "projectName": "BulkyWeb",
+      "projectPath": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\BulkyWeb\\BulkyWeb.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\BulkyWeb\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 852cbefe7256577b8881ae109015e4c1593d4a69
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4060,7 +4075,10 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
         "C:\\Program Files\\dotnet\\library-packs": {},
+=======
+>>>>>>> 852cbefe7256577b8881ae109015e4c1593d4a69
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
