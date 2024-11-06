@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>     <!--to oznacza czy chcemy aby samo dodawało biblioteki podczas pisania kodu czy zeby
+	manualnie trzeba bylo je dodawać-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.6" />
+  </ItemGroup>
+                        <!--tu dodajemy nuget paczki lub npm paczki-->
+</Project>
+
+
+
+<!--w dependencies w exploratorze mogą znajdować sie pliki ktore dodaja baze danych lub integracje płatności
+    dependencies oznaczaja ze projekt jest zalezny od innego projektu lub od innych paczek
+
+-->

@@ -1,0 +1,53 @@
+﻿@model List<Category>								//przechwycenie danych z kontrolera
+<partial name="_Notification"/>						@* dodanie widoku przejściowego informującego o pomyślnym wykonaniu akcji  *@
+<div class="container">
+	<div class="row pt-4 pb-3">			@* pt oznacza padding top a pb oznacza padding bottom. Tutaj jest tworzony div ktory dzieli storne na 12 kolumn  *@
+		<div class="col-6">					@*pierwsze 6 kolumn zajmuje tekst*@
+			<h2 class="text-primary">
+				Category List
+			</h2>
+		</div>
+		<div class="col-6 text-end">		@*drugie 6 kolumn zajmuje przycisk*@
+			<a asp-controller="Category" asp-action="Create" class="btn btn-primary">		@* Można napisac same action bo i tak bedzie szukac w tym kotrolerze w ktorym jest index *@
+				<i class="bi bi-plus-circle"></i> Create New Category
+			</a>
+		</div>
+	</div>
+<table class="table table-bordered table-striped">
+	<thead>
+		<!--głowa tabeli-->
+		<tr>
+			<th>
+				Category Name
+			</th>
+			<th>
+				Display Order
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<!--ciało tabeli-->
+		@foreach (var obj in Model.OrderBy(u=>u.DisplayOrder))			//sortujemy według kolumny displayorder
+		{
+			<tr>
+				<td>@obj.Name</td>
+				<td>
+					@obj.DisplayOrder
+				</td>
+
+				<td>
+						<div class="w-75 btn btn-group" role="group">										@* w-75 oznacza, że szerokość kontenera będzie wynosić 75% szerokości jego elementu nadrzędnego (rodzica) *@
+							<a asp-controller="Category" asp-action="Edit" asp-route-Id="@obj.Id" class="btn btn-primary mx-2">	@* przekazujemy do pozycji Id w adresie URL wartość Id obiektu obj (to leci do akcji Edit do zmiennej Id) *@								@* btn-group to kolejna klasa z Bootstrap, która jest używana do tworzenia grupy przycisków.Używa się jej, aby przyciski były wyświetlane obok siebie w jednej linii. Grupa przycisków może mieć różne style, np. wspólne obramowanie lub kolor tła. *@
+								<i class="bi bi-pencil-square"></i> Edit
+						</a>
+							<a asp-controller="Category" asp-action="Delete" asp-route-Id="@obj.Id" class="btn btn-danger mx-2">
+									<i class="bi bi-trash-fill"></i> Delete
+						</a>				
+						</div>																				@* W tym przypadku role="group" oznacza, że element pełni rolę grupy. Jest to bardziej semantyczne określenie, które mówi, że element <div> jest grupą przycisków lub podobnych elementów, co może pomóc w dostępności (np. dla osób używających technologii wspomagających). *@
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+</div>

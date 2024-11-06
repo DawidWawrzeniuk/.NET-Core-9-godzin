@@ -1,0 +1,18 @@
+﻿@if (TempData["success"] != null)
+{
+	<script	src="~/lib/jquery/dist/jquery.min.js"></script>
+//dodanie jquery aby działało powiadomienie popup
+	<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+	//dodanie skryptu który wyświetla wiadomosc popup o pozytywnym wykonaniu akcji 
+	<script type="text/javascript">
+		toastr.success('@TempData["success"]');					@* wyświetlenie wiadomosci o pozytywnym wykonaniu akcji create/edit/delete *@
+	</script>
+}
+@if (TempData["error"] != null)
+{
+			<script	src="~/lib/jquery/dist/jquery.min.js"></script>							//dodanie jquery aby działało powiadomienie popup
+			<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>			
+			<script type="text/javascript">
+					toastr.error('@TempData["error"]');					
+			</script>
+}
