@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\DI_Service_Lifetime\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1275157-B269-4AD1-BD87-FAC614B3B929}|DI_Service_Lifetime\\DI_Service_Lifetime.csproj|c:\\users\\pc\\desktop\\.net kurs 9 godzin\\di_service_lifetime\\di_service_lifetime\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1275157-B269-4AD1-BD87-FAC614B3B929}|DI_Service_Lifetime\\DI_Service_Lifetime.csproj|solutionrelative:di_service_lifetime\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1275157-B269-4AD1-BD87-FAC614B3B929}|DI_Service_Lifetime\\DI_Service_Lifetime.csproj|c:\\users\\pc\\desktop\\.net kurs 9 godzin\\di_service_lifetime\\di_service_lifetime\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1275157-B269-4AD1-BD87-FAC614B3B929}|DI_Service_Lifetime\\DI_Service_Lifetime.csproj|solutionrelative:di_service_lifetime\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\DI_Service_Lifetime\\DI_Service_Lifetime\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "DI_Service_Lifetime\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\DI_Service_Lifetime\\DI_Service_Lifetime\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "DI_Service_Lifetime\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T21:45:44.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\DI_Service_Lifetime\\DI_Service_Lifetime\\Program.cs",
+              "RelativeDocumentMoniker": "DI_Service_Lifetime\\Program.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\DI_Service_Lifetime\\DI_Service_Lifetime\\Program.cs",
+              "RelativeToolTip": "DI_Service_Lifetime\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T21:39:48.436Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
