@@ -1,44 +1,51 @@
 ﻿@model Category //pracujemy na modelu Category (bedziemy sie pytac o nazwe category i display order wiec i uzywamy modelu category) Jeżeli nic nie przekażemy w kontrolerze do View(); to widok sam stworzy obiekt z domyślnymi danymi 
 
-
-<form method="post">							@* ustawia metodę wysyłki formularza na POST, co oznacza, że dane formularza zostaną przesłane do serwera bez wyświetlania ich w URL-u (co jest bardziej bezpieczne, szczególnie dla danych wrażliwych). *@
-
-	<div class="border p-3 mt-4">@* Ta sekcja otacza cały formularz. Klasy Bootstrapu dodają tutaj:border - ramkę wokół całej zawartości formularza.p-3 - margines wewnętrzny (padding) równy 3 jednostkom, co w Bootstrapie wynosi zwykle 1.5 rem, a nie piksele.mt-4 - margines górny (margin-top) równy 4 jednostkom (około 1.5 rem), co tworzy odstęp od góry.	*@
-		<div class="row pb-2">
-			<h2 class="text-primary">Create Category</h2>
-			<hr/>		@* pozioma linia przerywająca treść *@
-		</div>
-
-		<div asp-validation-summary="All"></div>	@* używamy go do wyświetlania zbiorczego podsumowania komunikatów o błędach walidacyjnych w formularzu.Wartość "All" oznacza, że zostaną wyświetlone wszystkie komunikaty o błędach walidacyjnych, które są obecne w modelu ModelState *@
-													@* ModelState w ASP.NET Core to obiekt, który przechowuje stan modelu, zwłaszcza podczas przetwarzania danych wejściowych w formularzach. ModelState jest używany do weryfikacji danych, które użytkownik przesyła do serwera, oraz do przechowywania wszelkich błędów walidacji związanych z tymi danymi *@
-		@* <div asp-validation-summary="ModelOnly "></div>					nie wyświetla wiadomosci error dla właściwości takich jak name i display order (czyli wyswietli error z "test is invalid value" bo nie połączyliśmy do z żadnym z pól *@
-		@* <div asp-validation-summary="none "></div>					nie wyświetla zadnych wiadomosci w validation summary *@
-
-		<div class="mb-3 p-1">
-			<label asp-for="Name"></label>
-			<input asp-for="Name" class="form-control" />							@* asp-for przypisze wartosc ktora wpiszemy do zmiennej Name w modelu (np inna nazwa juz nie przejdzie np. Name1 (bedzie błąd))*@
-			<span asp-validation-for="Name" class="text-danger"></span>				@* używamy go w widokach ASP.NET Core MVC do wyświetlania komunikatów walidacyjnych związanych z polem Name w modelu *@
-		</div>
-		<div class="mb-3 p-1">
-			<label asp-for="DisplayOrder"></label>							@* tutaj jezeli damy asp-for="DisplayOrder" to automatycznie framework zrobi label z podpisem displayOrder *@
-			<input asp-for="DisplayOrder" class="form-control" />	
-			<span asp-validation-for="DisplayOrder" class="text-danger"></span>
-		</div>
-
-
+<div class="card shadow border-0 mt-4">
+	<div class="card-header bg-secondary bg-gradient ml-0 py-3">
 		<div class="row">
-			<div class="col-6 col-md-3"> @* jezeli ekran jest medium lub large to weź 3 kolumny a jezeli mniejszy niż medium to weź 6 kolumn (robimy to aby dla mnieszych ekranow nie rozwalało formularza*@
-				<button type="submit" class="btn btn-primary form-control">Create</button>
-			</div>
-			<div class="col-6 col-md-3">
-				<a asp-controller="Category" asp-action="Index" class="btn btn-secondary border form-control">Back to List</a>			@* form-control umożliwia to żeby przycisk wypełniał całą szerokośc kontenera *@
+			<div class="col-12 text-center">
+				<h2 class="text-white py-2">Create Category</h2>
 			</div>
 		</div>
-
-
-		
 	</div>
-</form>
+	<div class="card-body p-4">
+		<form method="post" class="row">							@* ustawia metodę wysyłki formularza na POST, co oznacza, że dane formularza zostaną przesłane do serwera bez wyświetlania ich w URL-u (co jest bardziej bezpieczne, szczególnie dla danych wrażliwych). *@
+			<div class="border p-3">@* Ta sekcja otacza cały formularz. Klasy Bootstrapu dodają tutaj:border - ramkę wokół całej zawartości formularza.p-3 - margines wewnętrzny (padding) równy 3 jednostkom, co w Bootstrapie wynosi zwykle 1.5 rem, a nie piksele.mt-4 - margines górny (margin-top) równy 4 jednostkom (około 1.5 rem), co tworzy odstęp od góry.	*@
+				<div asp-validation-summary="All"></div>	@* używamy go do wyświetlania zbiorczego podsumowania komunikatów o błędach walidacyjnych w formularzu.Wartość "All" oznacza, że zostaną wyświetlone wszystkie komunikaty o błędach walidacyjnych, które są obecne w modelu ModelState *@
+													@* ModelState w ASP.NET Core to obiekt, który przechowuje stan modelu, zwłaszcza podczas przetwarzania danych wejściowych w formularzach. ModelState jest używany do weryfikacji danych, które użytkownik przesyła do serwera, oraz do przechowywania wszelkich błędów walidacji związanych z tymi danymi *@
+				@* <div asp-validation-summary="ModelOnly "></div>					nie wyświetla wiadomosci error dla właściwości takich jak name i display order (czyli wyswietli error z "test is invalid value" bo nie połączyliśmy do z żadnym z pól *@
+				@* <div asp-validation-summary="none "></div>					nie wyświetla zadnych wiadomosci w validation summary *@
+
+					<div class="form-floating py-2 col-12">
+						<input asp-for="Name" class="form-control border-0 shadow"/>	@* ms oznacza "margin-start" (margines początkowy).2 to wartość, która wskazuje, że margines ma wynosić 0.5rem (czyli 8px, w standardowej konfiguracji Bootstrap 5).	 *@									@* asp-for przypisze wartosc ktora wpiszemy do zmiennej Name w modelu (np inna nazwa juz nie przejdzie np. Name1 (bedzie błąd))*@
+						<label asp-for="Name" class="ms-2"></label>
+						<span asp-validation-for="Name" class="text-danger"></span>				@* używamy go w widokach ASP.NET Core MVC do wyświetlania komunikatów walidacyjnych związanych z polem Name w modelu *@
+					</div>
+					<div class="form-floating py-2 col-12">
+						<input asp-for="DisplayOrder" class="form-control border-0 shadow"/>							@* tutaj jezeli damy asp-for="DisplayOrder" to automatycznie framework zrobi label z podpisem displayOrder *@
+						<label asp-for="DisplayOrder" class="ms-2"></label>	
+						<span asp-validation-for="DisplayOrder" class="text-danger"></span>
+					</div>
+					<div class="row pt-2">
+						<div class="col-6 col-md-3"> @* jezeli ekran jest medium lub large to weź 3 kolumny a jezeli mniejszy niż medium to weź 6 kolumn (robimy to aby dla mnieszych ekranow nie rozwalało formularza*@
+						<button type="submit" class="btn btn-primary form-control">Create</button>
+					</div>
+					<div class="col-6 col-md-3">
+						<a asp-controller="Category" asp-action="Index" class="btn btn-outline-primary border form-control">Back to List</a>			@* form-control umożliwia to żeby przycisk wypełniał całą szerokośc kontenera *@
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+
+
+
+
+
+
 
 
 @section Scripts{				@* ten skrypt sprawia ,że zostanie przeprowadzona walidacja wpisanychdanych przed wyslaniem do serwera (mniej obciąża serwer) ale jezeli jest recznie wpisany kod w kontroler ze np name jest rowny "test" to on juz tego nie bedzie sprawdzal tylko sprawdzenie nastapi po stronie serwera (czyli sprawdza defaultowe validacje a customowych nie sprawdza)*@
