@@ -1,3 +1,5 @@
+using Bulky.DataAccess.Repository;
+using Bulky.DataAccess.Repository.IRepository;
 using BulkyWeb.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,9 +11,9 @@ builder.Services.AddControllersWithViews();
 
 
 builder.Services.AddDbContext<ApplicationDbContext>(options=>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));			//dodanie Entity framework do projektu (w klasie ApplicationDbContext jest implementacja)
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));          //dodanie Entity framework do projektu (w klasie ApplicationDbContext jest implementacja)
 
-
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();//dodanie implementacji metod w interfejsie
 
 var app = builder.Build();
 

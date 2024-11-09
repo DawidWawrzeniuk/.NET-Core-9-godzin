@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|c:\\users\\pc\\desktop\\.net kurs 9 godzin\\bulky\\bulky.dataaccess\\migrations\\20241108191347_addcategorytodbandseedtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\migrations\\20241108191347_addcategorytodbandseedtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EAD0323-69DD-4A11-8B95-6E8A879C7A4B}|BulkyWeb\\BulkyWeb.csproj|c:\\users\\pc\\desktop\\.net kurs 9 godzin\\bulky\\bulkyweb\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAD0323-69DD-4A11-8B95-6E8A879C7A4B}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EAD0323-69DD-4A11-8B95-6E8A879C7A4B}|BulkyWeb\\BulkyWeb.csproj|c:\\users\\pc\\desktop\\.net kurs 9 godzin\\bulky\\bulkyweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7EAD0323-69DD-4A11-8B95-6E8A879C7A4B}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|c:\\users\\pc\\desktop\\.net kurs 9 godzin\\bulky\\bulky.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|c:\\users\\pc\\desktop\\.net kurs 9 godzin\\bulky\\bulky.dataaccess\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|c:\\users\\pc\\desktop\\.net kurs 9 godzin\\bulky\\bulky.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|c:\\users\\pc\\desktop\\.net kurs 9 godzin\\bulky\\bulky.dataaccess\\repository\\irepository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\irepository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|c:\\users\\pc\\desktop\\.net kurs 9 godzin\\bulky\\bulky.dataaccess\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EAD0323-69DD-4A11-8B95-6E8A879C7A4B}|BulkyWeb\\BulkyWeb.csproj|c:\\users\\pc\\desktop\\.net kurs 9 godzin\\bulky\\bulkyweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EAD0323-69DD-4A11-8B95-6E8A879C7A4B}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|c:\\users\\pc\\desktop\\.net kurs 9 godzin\\bulky\\bulky.dataaccess\\repository\\irepository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDC3BAD-1431-41D9-BB01-D77035683410}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\irepository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20241108191347_AddCategoryToDbAndSeedTable.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Migrations\\20241108191347_AddCategoryToDbAndSeedTable.cs",
-              "RelativeDocumentMoniker": "Bulky.DataAccess\\Migrations\\20241108191347_AddCategoryToDbAndSeedTable.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Migrations\\20241108191347_AddCategoryToDbAndSeedTable.cs",
-              "RelativeToolTip": "Bulky.DataAccess\\Migrations\\20241108191347_AddCategoryToDbAndSeedTable.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwAYAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T19:13:48.495Z",
+              "WhenOpened": "2024-11-09T20:32:46.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T20:31:12.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\BulkyWeb\\Program.cs",
+              "RelativeDocumentMoniker": "BulkyWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\BulkyWeb\\Program.cs",
+              "RelativeToolTip": "BulkyWeb\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T20:06:20.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\BulkyWeb\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "BulkyWeb\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\BulkyWeb\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "BulkyWeb\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAqwIQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T19:56:24.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Repository\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Repository\\CategoryRepository.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T19:36:50.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Repository\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Repository\\ICategoryRepository.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T19:32:21.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\Repository.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\IRepository\\Repository.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\Repository.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\IRepository\\Repository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T18:46:52.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\BulkyWeb\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "BulkyWeb\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\BulkyWeb\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "BulkyWeb\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T18:49:52.185Z",
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAD4vw0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T17:52:39.202Z",
               "EditorCaption": ""
             }
           ]

@@ -1,19 +1,21 @@
 ﻿using Bulky.Models;
 using Microsoft.AspNetCore.Mvc;
 using BulkyWeb.DataAccess.Data;
+using Bulky.DataAccess.Repository;
+using Bulky.DataAccess.Repository.IRepository;
 
 namespace BulkyWeb.Controllers
 {
 	public class CategoryController : Controller
 	{
-		private readonly ApplicationDbContext _db;      //(_db to nasza tabela, taki obiekt)to klasa służąca do interakcji z bazą danych, zarządzająca połączeniem oraz operacjami na danych.
-		public CategoryController(ApplicationDbContext db)      //to klasa kontrolera, która obsługuje logikę aplikacji związaną z kategoriami, zarządza żądaniami od użytkowników oraz współpracuje z modelami i widokami.
+		private readonly IUnitOfWork _unitOfWork;      //(_db to nasza tabela, taki obiekt)to klasa służąca do interakcji z bazą danych, zarządzająca połączeniem oraz operacjami na danych.
+		public CategoryController(IUnitOfWork unitOfWork)      //to klasa kontrolera, która obsługuje logikę aplikacji związaną z kategoriami, zarządza żądaniami od użytkowników oraz współpracuje z modelami i widokami.
 		{
-			_db = db;   //przypisanie do zmiennej lokalnej
+			_unitOfWork = unitOfWork;   //przypisanie do zmiennej lokalnej
 		}
 		public IActionResult Index()
 		{
-			List<Category> objCategoryList = _db.Categories.ToList();           //pobranie danych z tabeli Category (wierszy)
+			List<Category> objCategoryList = _unitOfWork.Category.GetAll().ToList();           //pobranie danych z tabeli Category (wierszy)
 			return View(objCategoryList);                                       //przekazanie danych do widoku
 		}
 
@@ -36,8 +38,8 @@ namespace BulkyWeb.Controllers
 			}
 			if (ModelState.IsValid)     //sprawdza wszystkie validacje w modelu (np. maksymalna dlugosc znaków czy zakres liczb ktore mozna wpisac
 			{
-				_db.Categories.Add(obj);    //dodanie nowej kategorii do tabeli _db
-				_db.SaveChanges();          //zapisanie zmian
+				_unitOfWork.Category.Add(obj);    //dodanie nowej kategorii do tabeli _db
+				_unitOfWork.Save();          //zapisanie zmian
 				TempData["succes"] = "Category created succesfully";					//kiedy uda sie zachować zmiany przypisujemy do zmiennej temp data wiadomosc ktora sie pokaze po zarenderowaniu następnej strony (to bedzie view index)
 				return RedirectToAction("Index");       //przekierowanie do akcji Index w kontrolerze Category
 			}
@@ -59,7 +61,7 @@ namespace BulkyWeb.Controllers
             {
 				return NotFound(); //wywala chyba error na stronie
             }
-			Category? categoryFromDb = _db.Categories.Find(id);      //tworzy obiekt ktory na podstawie id wyszukuje elementy
+			Category? categoryFromDb = _unitOfWork.Category.Get(u=>u.Id==id);      //tworzy obiekt ktory na podstawie id wyszukuje elementy
 																	//
 
 			//Category? categoryFromDb1 = _db.Categories.FirstOrDefault(u=>u.Id==id);      //tworzy obiekt ktory na podstawie id wyszukuje elementy (przyrownuje uzyskane id z obiektami w tabeli)
@@ -85,8 +87,8 @@ namespace BulkyWeb.Controllers
 			//}
 			if (ModelState.IsValid)     //sprawdza wszystkie validacje w modelu (np. maksymalna dlugosc znaków czy zakres liczb ktore mozna wpisac
 			{
-				_db.Categories.Update(obj);    //zaaktualizowanie kategorii do tabeli _db (nawet jak tworzymy nową to to działa)
-				_db.SaveChanges();          //zapisanie zmian
+				_unitOfWork.Category.Update(obj);    //zaaktualizowanie kategorii do tabeli _db (nawet jak tworzymy nową to to działa)
+				_unitOfWork.Save();          //zapisanie zmian
 				TempData["succes"] = "Category updated succesfully";                    //kiedy uda sie zachować zmiany przypisujemy do zmiennej temp data wiadomosc ktora sie pokaze po zarenderowaniu następnej strony (to bedzie view index)
 				return RedirectToAction("Index");       //przekierowanie do akcji Index w kontrolerze Category
 			}
@@ -107,8 +109,8 @@ namespace BulkyWeb.Controllers
 			{
 				return NotFound(); //wywala chyba error na stronie
 			}
-			Category? categoryFromDb = _db.Categories.Find(id);      //tworzy obiekt ktory na podstawie id wyszukuje elementy
-																	 		
+			Category? categoryFromDb = _unitOfWork.Category.Get(u => u.Id == id);      //tworzy obiekt ktory na podstawie id wyszukuje elementy
+
 			if (categoryFromDb == null)
 			{
 				return NotFound(); //wywala chyba error na stronie
@@ -122,14 +124,14 @@ namespace BulkyWeb.Controllers
 		{
 			
 
-			Category obj = _db.Categories.Find(id); //znajduje kategorie na podstawie id
+			Category obj = _unitOfWork.Category.Get(u => u.Id == id); //znajduje kategorie na podstawie id
 			if (obj == null)
 			{
 				return NotFound(); //wywala chyba error na stronie
 			}
 
-			_db.Categories.Remove(obj);     //usuwa kategorie o danym id
-			_db.SaveChanges();          //zapisanie zmian
+			_unitOfWork.Category.Remove(obj);     //usuwa kategorie o danym id
+			_unitOfWork.Save();          //zapisanie zmian
 			TempData["succes"] = "Category deleted succesfully";                    //kiedy uda sie zachować zmiany przypisujemy do zmiennej temp data wiadomosc ktora sie pokaze po zarenderowaniu następnej strony (to bedzie view index)
 			return RedirectToAction("Index");       //przekierowanie do akcji Index w kontrolerze Category
 		}
