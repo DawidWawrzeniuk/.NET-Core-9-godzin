@@ -107,7 +107,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.Utility\\Bulky.Utility.csproj": {
+                "projectPath": "C:\\Users\\PC\\Desktop\\.NET Kurs 9 godzin\\Bulky\\Bulky.Utility\\Bulky.Utility.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -124,6 +128,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -255,6 +265,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.10, )"

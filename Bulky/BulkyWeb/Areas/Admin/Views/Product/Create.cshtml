@@ -1,0 +1,105 @@
+﻿@model ProductVM		//pracujemy na modelu ProductVM
+
+<div class="card shadow border-0 my-4">
+	<div class="card-header bg-secondary bg-gradient ml-0 py-3">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h2 class="text-white py-2">Create Product</h2>
+			</div>
+		</div>
+	</div>
+	<div class="card-body p-4">
+		<form method="post" class="row">
+			@* ustawia metodę wysyłki formularza na POST, co oznacza, że dane formularza zostaną przesłane do serwera bez wyświetlania ich w URL-u (co jest bardziej bezpieczne, szczególnie dla danych wrażliwych). *@
+			<div class="border p-3">
+				@* Ta sekcja otacza cały formularz. Klasy Bootstrapu dodają tutaj:border - ramkę wokół całej zawartości formularza.p-3 - margines wewnętrzny (padding) równy 3 jednostkom, co w Bootstrapie wynosi zwykle 1.5 rem, a nie piksele.mt-4 - margines górny (margin-top) równy 4 jednostkom (około 1.5 rem), co tworzy odstęp od góry.	*@
+				<div asp-validation-summary="All"></div>	@* używamy go do wyświetlania zbiorczego podsumowania komunikatów o błędach walidacyjnych w formularzu.Wartość "All" oznacza, że zostaną wyświetlone wszystkie komunikaty o błędach walidacyjnych, które są obecne w modelu ModelState *@
+				@* ModelState w ASP.NET Core to obiekt, który przechowuje stan modelu, zwłaszcza podczas przetwarzania danych wejściowych w formularzach. ModelState jest używany do weryfikacji danych, które użytkownik przesyła do serwera, oraz do przechowywania wszelkich błędów walidacji związanych z tymi danymi *@
+				@* <div asp-validation-summary="ModelOnly "></div>					nie wyświetla wiadomosci error dla właściwości takich jak name i display order (czyli wyswietli error z "test is invalid value" bo nie połączyliśmy do z żadnym z pól *@
+				@* <div asp-validation-summary="none "></div>					nie wyświetla zadnych wiadomosci w validation summary *@
+
+				<div class="form-floating py-2 col-12">
+					<input asp-for="Product.Title" class="form-control border-0 shadow" />	@* ms oznacza "margin-start" (margines początkowy).2 to wartość, która wskazuje, że margines ma wynosić 0.5rem (czyli 8px, w standardowej konfiguracji Bootstrap 5).	 *@									@* asp-for przypisze wartosc ktora wpiszemy do zmiennej Name w modelu (np inna nazwa juz nie przejdzie np. Name1 (bedzie błąd))*@
+					<label asp-for="Product.Title" class="ms-2"></label>
+					<span asp-validation-for="Product.Title" class="text-danger"></span>				@* używamy go w widokach ASP.NET Core MVC do wyświetlania komunikatów walidacyjnych związanych z polem Name w modelu *@
+				</div>
+				<div class="form-floating py-2 col-12">
+					<input asp-for="Product.Description" class="form-control border-0 shadow" />							@* tutaj jezeli damy asp-for="DisplayOrder" to automatycznie framework zrobi label z podpisem displayOrder *@
+					<label asp-for="Product.Description" class="ms-2"></label>
+					<span asp-validation-for="Product.Description" class="text-danger"></span>
+				</div>
+				<div class="form-floating py-2 col-12">
+					<input asp-for="Product.ISBN" class="form-control border-0 shadow" />							@* tutaj jezeli damy asp-for="DisplayOrder" to automatycznie framework zrobi label z podpisem displayOrder *@
+					<label asp-for="Product.ISBN" class="ms-2"></label>
+					<span asp-validation-for="Product.ISBN" class="text-danger"></span>
+				</div>
+				<div class="form-floating py-2 col-12">
+					<input asp-for="Product.Author" class="form-control border-0 shadow" />							@* tutaj jezeli damy asp-for="DisplayOrder" to automatycznie framework zrobi label z podpisem displayOrder *@
+					<label asp-for="Product.Author" class="ms-2"></label>
+					<span asp-validation-for="Product.Author" class="text-danger"></span>
+				</div>
+				<div class="form-floating py-2 col-12">
+					<input asp-for="Product.ListPrice" class="form-control border-0 shadow" />							@* tutaj jezeli damy asp-for="DisplayOrder" to automatycznie framework zrobi label z podpisem displayOrder *@
+					<label asp-for="Product.ListPrice" class="ms-2"></label>
+					<span asp-validation-for="Product.ListPrice" class="text-danger"></span>
+				</div>
+				<div class="form-floating py-2 col-12">
+					<input asp-for="Product.Price50" class="form-control border-0 shadow" />							@* tutaj jezeli damy asp-for="DisplayOrder" to automatycznie framework zrobi label z podpisem displayOrder *@
+					<label asp-for="Product.Price50" class="ms-2"></label>
+					<span asp-validation-for="Product.Price50" class="text-danger"></span>
+				</div>
+				<div class="form-floating py-2 col-12">
+					<input asp-for="Product.Price100" class="form-control border-0 shadow" />							@* tutaj jezeli damy asp-for="DisplayOrder" to automatycznie framework zrobi label z podpisem displayOrder *@
+					<label asp-for="Product.Price100" class="ms-2"></label>
+					<span asp-validation-for="Product.Price100" class="text-danger"></span>
+				</div>
+				<!-- <div class="form-floating py-2 col-12">
+					<select asp-for="CategoryId" asp-items="ViewBag.CategoryList" class="form-select border-0 shadow">	@* tworzy liste rozwijaną w ktorej elementami są dane z Viewbaga a dana o wybranej opcji jest przekazywana do CategoryId *@
+						<option disabled selected>--Select Category--</option>
+					</select>							
+					<label asp-for="CategoryId" class="ms-2"></label>
+					<span asp-validation-for="CategoryId" class="text-danger"></span>
+				</div> -->
+				<!--<div class="form-floating py-2 col-12">
+					<select asp-for="Product.CategoryId" asp-items="@(ViewData["CategoryList"] as IEnumerable<SelectListItem>)" class="form-select border-0 shadow">			@*tworzy liste rozwijaną w ktorej elementami są dane z ViewData a dana o wybranej opcji jest przekazywana do CategoryId *@
+						<option disabled selected>--Select Category--</option>			@* ViewData musi miec określony typ *@ 
+					</select>
+					<label asp-for="Product.CategoryId" class="ms-2"></label>
+					<span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+				</div>-->
+				<div class="form-floating py-2 col-12">
+					<select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class="form-select border-0 shadow">			@*tworzy liste rozwijaną w ktorej elementami są dane z ViewData a dana o wybranej opcji jest przekazywana do CategoryId *@
+						<option disabled selected>--Select Category--</option>			@* otrzymujemy dane poprzez pośredni model *@ 
+					</select>
+					<label asp-for="Product.CategoryId" class="ms-2"></label>
+					<span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+				</div>
+				<div class="row pt-2">
+					<div class="col-6 col-md-3">
+																		@* jezeli ekran jest medium lub large to weź 3 kolumny a jezeli mniejszy niż medium to weź 6 kolumn (robimy to aby dla mnieszych ekranow nie rozwalało formularza*@
+						<button type="submit" class="btn btn-primary form-control">Create</button>
+					</div>
+					<div class="col-6 col-md-3">
+						<a asp-controller="Product" asp-action="Index" class="btn btn-outline-primary border form-control">Back to List</a>			@* form-control umożliwia to żeby przycisk wypełniał całą szerokośc kontenera *@
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+@section Scripts {
+	@* ten skrypt sprawia ,że zostanie przeprowadzona walidacja wpisanychdanych przed wyslaniem do serwera (mniej obciąża serwer) ale jezeli jest recznie wpisany kod w kontroler ze np name jest rowny "test" to on juz tego nie bedzie sprawdzal tylko sprawdzenie nastapi po stronie serwera (czyli sprawdza defaultowe validacje a customowych nie sprawdza)*@
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+}

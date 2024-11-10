@@ -10,3 +10,7 @@ C:\Users\PC\Desktop\.NET Kurs 9 godzin\Bulky\Bulky.Models\obj\Debug\net8.0\Bulky
 C:\Users\PC\Desktop\.NET Kurs 9 godzin\Bulky\Bulky.Models\obj\Debug\net8.0\refint\Bulky.Models.dll
 C:\Users\PC\Desktop\.NET Kurs 9 godzin\Bulky\Bulky.Models\obj\Debug\net8.0\Bulky.Models.pdb
 C:\Users\PC\Desktop\.NET Kurs 9 godzin\Bulky\Bulky.Models\obj\Debug\net8.0\ref\Bulky.Models.dll
+C:\Users\PC\Desktop\.NET Kurs 9 godzin\Bulky\Bulky.Models\obj\Debug\net8.0\Bulky.Models.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET Kurs 9 godzin\Bulky\Bulky.Models\bin\Debug\net8.0\Bulky.Utility.dll
+C:\Users\PC\Desktop\.NET Kurs 9 godzin\Bulky\Bulky.Models\bin\Debug\net8.0\Bulky.Utility.pdb
+C:\Users\PC\Desktop\.NET Kurs 9 godzin\Bulky\Bulky.Models\obj\Debug\net8.0\Bulky.Mo.343AC5CD.Up2Date
